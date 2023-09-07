@@ -1,0 +1,17 @@
+# Ignore all maven created target directories
+**/target/*
+
+# Ignore IDE files
+**/*.iml
+**/.eclipse
+**/.idea/*
+**/*.log
+
+**/*.class
+*.orig
+*.ipr
+
+# Package Files #
+*.jar
+*.war
+*.ear
