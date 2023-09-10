@@ -68,7 +68,6 @@ public class SecurityConfig {
     }
 
     /*
-     * This was added via PR (thanks to @ch4mpy)
      * This will allow the /token endpoint to use basic auth and everything else uses the SFC above
      */
     @Order(Ordered.HIGHEST_PRECEDENCE)
