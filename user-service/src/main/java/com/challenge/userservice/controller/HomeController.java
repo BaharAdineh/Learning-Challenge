@@ -1,4 +1,4 @@
-package com.challenge.learn.controller;
+package com.challenge.userservice.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

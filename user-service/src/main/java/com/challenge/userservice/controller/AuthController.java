@@ -1,6 +1,6 @@
-package com.challenge.learn.controller;
+package com.challenge.userservice.controller;
 
-import com.challenge.learn.service.TokenService;
+import com.challenge.userservice.service.TokenService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.security.core.Authentication;

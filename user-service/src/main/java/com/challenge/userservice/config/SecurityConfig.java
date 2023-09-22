@@ -1,4 +1,4 @@
-package com.challenge.learn.config;
+package com.challenge.userservice.config;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.challenge.learn.service;
+package com.challenge.userservice.service;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
