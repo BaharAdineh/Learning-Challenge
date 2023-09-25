@@ -6,8 +6,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
-import org.springframework.http.HttpMethod;
-import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -23,7 +21,6 @@ import org.springframework.security.oauth2.server.resource.web.BearerTokenAuthen
 import org.springframework.security.oauth2.server.resource.web.access.BearerTokenAccessDeniedHandler;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
-import org.springframework.security.web.context.SecurityContextPersistenceFilter;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
@@ -35,6 +32,7 @@ import com.nimbusds.jose.jwk.RSAKey;
 import com.nimbusds.jose.jwk.source.ImmutableJWKSet;
 import com.nimbusds.jose.jwk.source.JWKSource;
 import com.nimbusds.jose.proc.SecurityContext;
+
 
 import static org.springframework.security.config.Customizer.*;
 
@@ -51,7 +49,7 @@ public class SecurityConfig {
 
     @Bean
     public InMemoryUserDetailsManager users() {
-        return new InMemoryUserDetailsManager(User.withUsername("admin").password("{noop}admin").authorities("read").build());
+        return new InMemoryUserDetailsManager(User.withUsername("dvega").password("{noop}password").authorities("read").build());
     }
 
     @Bean
@@ -68,6 +66,7 @@ public class SecurityConfig {
     }
 
     /*
+     * This was added via PR (thanks to @ch4mpy)
      * This will allow the /token endpoint to use basic auth and everything else uses the SFC above
      */
     @Order(Ordered.HIGHEST_PRECEDENCE)
