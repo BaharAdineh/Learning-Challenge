@@ -1,2 +1,17 @@
+spring:
+  application:
+    name: product-service
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/product-service-db
+      database: ivmsDB
+      host: localhost
+  profiles:
+    active: dev
+  security:
+    user:
+      name: admin
+      password: admin
+
 server:
-  port: 8081
+  port: 8084
