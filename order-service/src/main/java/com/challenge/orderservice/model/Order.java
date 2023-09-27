@@ -1,7 +1,6 @@
-package com.challenge.ivms.orderservice.model;
+package com.challenge.orderservice.model;
 
-import com.challenge.ivms.productservice.model.Product;
-import com.challenge.ivms.userservice.model.User;
+
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
