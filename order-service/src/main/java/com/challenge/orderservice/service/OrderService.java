@@ -1,16 +1,16 @@
-package com.challenge.ivms.orderservice.service;
+package com.challenge.orderservice.service;
 
-import com.challenge.ivms.userservice.service.UserValidationService;
+import com.challenge.userservice.service.TokenService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class OrderService {
     @Autowired
-    private UserValidationService userValidationService;
+    private TokenService tokenService;
 
     public void validateToken(String token) {
-        boolean isValidToken = userValidationService.validateToken(token);
+        boolean isValidToken = tokenService.validateToken(token);
 
         if (isValidToken) {
             // Token is valid, proceed with necessary actions

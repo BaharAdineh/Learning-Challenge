@@ -1,4 +1,4 @@
-package com.challenge.ivms.productservice;
+package com.challenge.productservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

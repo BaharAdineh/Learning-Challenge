@@ -1,6 +1,6 @@
-package com.challenge.ivms.productservice.repository;
+package com.challenge.productservice.repository;
 
-import com.challenge.ivms.productservice.model.Product;
+import com.challenge.productservice.model.Product;
 import org.springframework.stereotype.Repository;
 import org.springframework.data.mongodb.repository.MongoRepository;
 @Repository

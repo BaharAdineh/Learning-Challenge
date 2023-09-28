@@ -1,6 +1,6 @@
-package com.challenge.ivms.orderservice.orderCreation;
+package com.challenge.orderservice.orderCreation;
 
-import com.challenge.ivms.orderservice.model.Order;
+import com.challenge.orderservice.model.Order;
 
 import java.util.List;
 import java.util.Optional;

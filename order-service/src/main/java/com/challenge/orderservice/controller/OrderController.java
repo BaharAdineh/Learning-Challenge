@@ -1,7 +1,7 @@
-package com.challenge.ivms.orderservice.controller;
+package com.challenge.orderservice.controller;
 
-import com.challenge.ivms.orderservice.model.Order;
-import com.challenge.ivms.orderservice.orderCreation.OrderServiceImpl;
+import com.challenge.orderservice.model.Order;
+import com.challenge.orderservice.orderCreation.OrderServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

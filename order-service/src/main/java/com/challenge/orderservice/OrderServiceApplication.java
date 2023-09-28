@@ -1,4 +1,4 @@
-package com.challenge.ivms.orderservice;
+package com.challenge.orderservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,6 +1,6 @@
-package com.challenge.ivms.orderservice.repository;
+package com.challenge.orderservice.repository;
 
-import com.challenge.ivms.orderservice.model.Order;
+import com.challenge.orderservice.model.Order;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

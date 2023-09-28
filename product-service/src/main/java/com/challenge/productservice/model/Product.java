@@ -1,4 +1,4 @@
-package com.challenge.ivms.productservice.model;
+package com.challenge.productservice.model;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;

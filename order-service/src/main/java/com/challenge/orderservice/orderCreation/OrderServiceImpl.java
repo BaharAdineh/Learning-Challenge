@@ -1,11 +1,10 @@
-package com.challenge.ivms.orderservice.orderCreation;
+package com.challenge.orderservice.orderCreation;
 
-import com.challenge.ivms.orderservice.model.Order;
-import com.challenge.ivms.orderservice.repository.OrderRepository;
-import com.challenge.ivms.productservice.model.Product;
-import com.challenge.ivms.productservice.service.ProductService;
-import com.challenge.ivms.userservice.model.User;
-import com.challenge.ivms.userservice.service.UserService;
+import com.challenge.orderservice.model.Order;
+import com.challenge.orderservice.repository.OrderRepository;
+import com.challenge.productservice.model.Product;
+import com.challenge.productservice.service.ProductService;
+import com.challenge.userservice.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

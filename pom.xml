@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.challenge.learn</groupId>
     <artifactId>Learning-Challenge</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>Learning-Challenge</name>
     <description>Learning-Challenge</description>
     <properties>

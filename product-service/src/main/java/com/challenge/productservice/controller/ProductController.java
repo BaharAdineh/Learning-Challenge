@@ -1,7 +1,7 @@
-package com.challenge.ivms.productservice.controller;
+package com.challenge.productservice.controller;
 
-import com.challenge.ivms.productservice.service.ProductService;
-import com.challenge.ivms.productservice.model.Product;
+import com.challenge.productservice.service.ProductService;
+import com.challenge.productservice.model.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,6 +1,6 @@
-package com.challenge.ivms.productservice.service;
+package com.challenge.productservice.service;
 
-import com.challenge.ivms.productservice.model.Product;
+import com.challenge.productservice.model.Product;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
