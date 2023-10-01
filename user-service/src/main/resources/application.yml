@@ -2,4 +2,4 @@ rsa:
   private-key: private.pem
   public-key: public.pem
 server:
-  port: 8080
+  port: 8083
