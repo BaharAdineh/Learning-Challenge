@@ -6,7 +6,7 @@
 
 * Order Processing: Implement a background service to process orders. This involves packaging the products, generating invoices, and preparing them for shipment.
 
-* Shipping Integration: Integrate with shipping services (e.g., UPS, FedEx) to calculate shipping costs, generate shipping labels, and provide tracking numbers.
+* Shipping Integration: Integrate with shipping services (e.g., UPS, FedEx, ...) to calculate shipping costs, generate shipping labels, and provide tracking numbers.
 
 * Email Notifications: Send email notifications to customers regarding order confirmation, shipment details, and estimated delivery dates.
 
