@@ -1,5 +1,21 @@
+spring:
+  application:
+    name: user-service
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/user-service-db
+      database: ivmsDB
+      host: localhost
+  profiles:
+    active: dev
+  security:
+    user:
+      name: admin
+      password: admin
+
+server:
+  port: 8083
+
 rsa:
   private-key: private.pem
   public-key: public.pem
-server:
-  port: 8083
