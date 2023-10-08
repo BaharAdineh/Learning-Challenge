@@ -5,6 +5,7 @@ import com.challenge.orderservice.repository.OrderRepository;
 import com.challenge.productservice.model.Product;
 import com.challenge.productservice.service.ProductService;
 import com.challenge.userservice.model.User;
+import com.challenge.userservice.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
