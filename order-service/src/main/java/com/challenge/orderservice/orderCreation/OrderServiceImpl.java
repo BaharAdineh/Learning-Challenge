@@ -25,7 +25,6 @@ public class OrderServiceImpl {
     private UserService userService;
 
 
-    // Create an order for a given product and user
     public Order createOrder(Order order) {
         Optional<User> user = userService.getUserById(order.getUserId());
         Optional<Product> product = productService.getProductById(order.getProductId());
@@ -47,5 +46,4 @@ public class OrderServiceImpl {
         orderRepository.deleteById(id);
     }
 
-    // Additional methods for order management as needed
 }
