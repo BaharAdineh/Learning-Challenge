@@ -29,7 +29,7 @@ public class UserController {
     public List<User> getAllUsers(@RequestHeader("Authorization") String token) {
         // Check the validity of the token
         if (tokenService.validateToken(token)) {
-            return userService.getAllUsers();
+            return userService.getAllUsers(token);
         } else {
             // Handle unauthorized access, e.g., return an error response
             throw new UnauthorizedException("Invalid or expired token");
