@@ -15,15 +15,17 @@ import java.util.Optional;
 @Service
 public class OrderServiceImpl {
 
-    @Autowired
     private OrderRepository orderRepository;
-
-    @Autowired
     private ProductService productService;
-
-    @Autowired
     private UserService userService;
 
+
+    @Autowired
+    public OrderServiceImpl(OrderRepository orderRepository, ProductService productService, UserService userService) {
+        this.orderRepository = orderRepository;
+        this.productService = productService;
+        this.userService = userService;
+    }
 
     public Order createOrder(Order order) {
         Optional<User> user = userService.getUserById(order.getUserId());
@@ -34,6 +36,7 @@ public class OrderServiceImpl {
             return null;
         }
     }
+
     public List<Order> getAllOrders() {
         return orderRepository.findAll();
     }
