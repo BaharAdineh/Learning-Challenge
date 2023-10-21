@@ -1,13 +1,16 @@
 package com.challenge.orderservice.service;
 
 import com.challenge.userservice.service.TokenService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class OrderService {
-    @Autowired
+
     private TokenService tokenService;
+
+    public OrderService(TokenService tokenService) {
+        this.tokenService = tokenService;
+    }
 
     public void validateToken(String token) {
         boolean isValidToken = tokenService.validateToken(token);
