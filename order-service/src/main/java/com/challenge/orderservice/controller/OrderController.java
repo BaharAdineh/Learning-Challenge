@@ -1,7 +1,7 @@
 package com.challenge.orderservice.controller;
 
 import com.challenge.orderservice.model.Order;
-import com.challenge.orderservice.orderCreation.OrderServiceImpl;
+import com.challenge.orderservice.ordercreation.OrderServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,7 +16,7 @@ public class OrderController {
     private OrderServiceImpl orderService;
 
     @PostMapping
-    public ResponseEntity<Order> createOrder(@RequestBody Order order) {
+    public ResponseEntity<Order> createOrder(final @RequestBody Order order) {
         Order createdOrder = orderService.createOrder(order);
         return ResponseEntity.ok(createdOrder);
     }

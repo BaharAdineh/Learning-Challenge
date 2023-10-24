@@ -1,4 +1,4 @@
-package com.challenge.orderservice.orderCreation;
+package com.challenge.orderservice.ordercreation;
 
 import com.challenge.orderservice.model.Order;
 import com.challenge.orderservice.repository.OrderRepository;
