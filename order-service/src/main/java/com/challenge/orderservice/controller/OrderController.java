@@ -28,8 +28,8 @@ public class OrderController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Order> getOrderById(@PathVariable("id") String id) {
-        Optional<Order> order = orderService.getOrderById(id);
+    public ResponseEntity<Order> getOrderById(@PathVariable("id") String orderId) {
+        Optional<Order> order = orderService.getOrderById(orderId);
         return order.map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build());
     }
 
