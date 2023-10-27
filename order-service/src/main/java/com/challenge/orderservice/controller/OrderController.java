@@ -34,8 +34,8 @@ public class OrderController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteOrder(@PathVariable("id") String id) {
-        orderService.deleteOrder(id);
+    public ResponseEntity<Void> deleteOrder(@PathVariable("id") String orderId) {
+        orderService.deleteOrder(orderId);
         return ResponseEntity.noContent().build();
     }
 
