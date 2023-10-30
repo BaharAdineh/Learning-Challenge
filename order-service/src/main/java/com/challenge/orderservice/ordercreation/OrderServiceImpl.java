@@ -41,12 +41,12 @@ public class OrderServiceImpl {
         return orderRepository.findAll();
     }
 
-    public Optional<Order> getOrderById(String id) {
-        return orderRepository.findById(id);
+    public Optional<Order> getOrderById(String orderId) {
+        return orderRepository.findById(orderId);
     }
 
-    public void deleteOrder(String id) {
-        orderRepository.deleteById(id);
+    public void deleteOrder(String orderId) {
+        orderRepository.deleteById(orderId);
     }
 
 }
