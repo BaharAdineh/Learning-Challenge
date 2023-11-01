@@ -37,10 +37,10 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public Optional<User> getUserById(@PathVariable String id, @RequestHeader("Authorization") String token) {
+    public Optional<User> getUserById(@PathVariable String userId, @RequestHeader("Authorization") String token) {
         // Check the validity of the token
         if (tokenService.validateToken(token)) {
-            return userService.getUserById(id);
+            return userService.getUserById(userId);
         } else {
             // Handle unauthorized access, e.g., return an error response
             throw new UnauthorizedException("Invalid or expired token");

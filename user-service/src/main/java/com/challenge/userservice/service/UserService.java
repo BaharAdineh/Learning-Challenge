@@ -26,8 +26,8 @@ public class UserService {
         this.tokenService = tokenService;
     }
 
-    public Optional<User> getUserById(String id) {
-        return userRepository.findById(id);
+    public Optional<User> getUserById(String userId) {
+        return userRepository.findById(userId);
     }
 
     /*
