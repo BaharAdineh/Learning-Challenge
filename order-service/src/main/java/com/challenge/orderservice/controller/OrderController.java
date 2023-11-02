@@ -17,13 +17,13 @@ public class OrderController {
 
     @PostMapping
     public ResponseEntity<Order> createOrder(final @RequestBody Order order) {
-        Order createdOrder = orderService.createOrder(order);
+        final Order createdOrder = orderService.createOrder(order);
         return ResponseEntity.ok(createdOrder);
     }
 
     @GetMapping
     public ResponseEntity<List<Order>> getAllOrders() {
-        List<Order> orders = orderService.getAllOrders();
+        final List<Order> orders = orderService.getAllOrders();
         return ResponseEntity.ok(orders);
     }
 
