@@ -28,13 +28,13 @@ public class OrderController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Order> getOrderById(@PathVariable("id") String orderId) {
-        Optional<Order> order = orderService.getOrderById(orderId);
+    public ResponseEntity<Order> getOrderById(final @PathVariable("id") String orderId) {
+        final Optional<Order> order = orderService.getOrderById(orderId);
         return order.map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build());
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteOrder(@PathVariable("id") String orderId) {
+    public ResponseEntity<Void> deleteOrder(final @PathVariable("id") String orderId) {
         orderService.deleteOrder(orderId);
         return ResponseEntity.noContent().build();
     }
