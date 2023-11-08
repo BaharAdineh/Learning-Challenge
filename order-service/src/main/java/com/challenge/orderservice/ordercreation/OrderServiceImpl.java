@@ -27,7 +27,7 @@ public class OrderServiceImpl {
         this.userService = userService;
     }
 
-    public Order createOrder(Order order) {
+    public Order createOrder(final Order order) {
         Optional<User> user = userService.getUserById(order.getUserId());
         Optional<Product> product = productService.getProductById(order.getProductId());
         if (user.isPresent() && product.isPresent()) {
