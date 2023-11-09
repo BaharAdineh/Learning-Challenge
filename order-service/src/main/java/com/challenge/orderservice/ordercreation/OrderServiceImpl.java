@@ -28,8 +28,8 @@ public class OrderServiceImpl {
     }
 
     public Order createOrder(final Order order) {
-        Optional<User> user = userService.getUserById(order.getUserId());
-        Optional<Product> product = productService.getProductById(order.getProductId());
+        final Optional<User> user = userService.getUserById(order.getUserId());
+        final Optional<Product> product = productService.getProductById(order.getProductId());
         if (user.isPresent() && product.isPresent()) {
             return orderRepository.save(order);
         } else {
