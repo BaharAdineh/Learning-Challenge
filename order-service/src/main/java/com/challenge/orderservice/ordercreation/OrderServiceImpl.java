@@ -15,7 +15,7 @@ import java.util.Optional;
 @Service
 public class OrderServiceImpl {
 
-    private OrderRepository orderRepository;
+    private final OrderRepository orderRepository;
     private ProductService productService;
     private UserService userService;
 
