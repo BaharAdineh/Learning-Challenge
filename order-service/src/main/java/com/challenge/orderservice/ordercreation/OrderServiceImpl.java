@@ -16,7 +16,7 @@ import java.util.Optional;
 public class OrderServiceImpl {
 
     private final OrderRepository orderRepository;
-    private ProductService productService;
+    private final ProductService productService;
     private UserService userService;
 
 
