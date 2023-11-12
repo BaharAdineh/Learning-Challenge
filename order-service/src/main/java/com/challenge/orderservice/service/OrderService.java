@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class OrderService {
 
-    private TokenService tokenService;
+    private final TokenService tokenService;
 
     public OrderService(TokenService tokenService) {
         this.tokenService = tokenService;
