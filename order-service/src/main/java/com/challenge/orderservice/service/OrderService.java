@@ -13,7 +13,9 @@ public class OrderService {
     }
 
     public void validateToken(String token) {
-        boolean isValidToken = tokenService.validateToken(token);
+        boolean isValidToken;
+        if (tokenService.validateToken(token)) isValidToken = true;
+        else isValidToken = false;
 
         if (isValidToken) {
             // Token is valid, proceed with necessary actions
