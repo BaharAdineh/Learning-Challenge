@@ -12,8 +12,13 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/orders")
 public class OrderController {
+
     @Autowired
     private OrderServiceImpl orderService;
+
+    public OrderController(OrderServiceImpl orderService) {
+        this.orderService = orderService;
+    }
 
     @PostMapping
     public ResponseEntity<Order> createOrder(final @RequestBody Order order) {
