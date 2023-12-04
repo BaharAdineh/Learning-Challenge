@@ -40,7 +40,7 @@ public class ProductController {
     public ResponseEntity<Product> updateProduct(@PathVariable String productId, @RequestBody Product product) {
         final Optional<Product> updatedProduct = productService.getProductById(productId);
         if (updatedProduct.isPresent()) {
-            Product savedProduct = productService.updateProduct(product);
+            final Product savedProduct = productService.updateProduct(product);
             return new ResponseEntity<>(savedProduct, HttpStatus.OK);
         } else {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
