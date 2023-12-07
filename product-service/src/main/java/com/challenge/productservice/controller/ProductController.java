@@ -37,7 +37,7 @@ public class ProductController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Product> updateProduct(@PathVariable String productId, final @RequestBody Product product) {
+    public ResponseEntity<Product> updateProduct(final @PathVariable String productId, final @RequestBody Product product) {
         final Optional<Product> updatedProduct = productService.getProductById(productId);
         if (updatedProduct.isPresent()) {
             final Product savedProduct = productService.updateProduct(product);
